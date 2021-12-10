@@ -1,5 +1,29 @@
 #include <iostream>
 
+int sumar(int x, int y); // definición anticipada para la función sumar
+
+int main()
+{
+    std::cout << sumar(3, 4) << '\n';
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*#include <iostream>
+
 static int g_x{ 3 }; // este interno g_x solo es accesible desde dentro de este archivo
 
 int main()
@@ -7,7 +31,7 @@ int main()
     std::cout << g_x << '\n'; // usa el g_x de VinculacionInterna, imprime 3
 
     return 0;
-}
+}*/
 
 
 

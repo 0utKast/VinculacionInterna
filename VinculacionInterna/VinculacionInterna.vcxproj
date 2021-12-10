@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Sumar.cpp" />
     <ClCompile Include="Uno.cpp" />
     <ClCompile Include="VinculacionInterna.cpp" />
   </ItemGroup>
