@@ -1,4 +1,28 @@
-#include <iostream>
+// Definiciones de variables globales internas:
+static int g_x;          // define una variable global interna no inicializada (inicializada a cero predeterminado)
+static int g_x{ 1 };     // define una variable global interna inicializada
+
+const int g_y{ 2 };     // define una variable global const inicializada
+constexpr int g_y{ 3 }; // define una variable global constexpr inicializada
+
+// Definiciones funciones internas:
+static int foo() {};     // define función interna
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*#include <iostream>
 
 int sumar(int x, int y); // definición anticipada para la función sumar
 
@@ -7,7 +31,7 @@ int main()
     std::cout << sumar(3, 4) << '\n';
 
     return 0;
-}
+}*/
 
 
 
