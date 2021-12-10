@@ -1,4 +1,24 @@
-static int g_x; // globales no-constant tienen vinculación externa predeterminada, pero podemos darles vinculación interna usando la palabra clave static
+#include <iostream>
+
+static int g_x{ 3 }; // este interno g_x solo es accesible desde dentro de este archivo
+
+int main()
+{
+    std::cout << g_x << '\n'; // usa el g_x de VinculacionInterna, imprime 3
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+/*static int g_x; // globales no-constant tienen vinculación externa predeterminada, pero podemos darles vinculación interna usando la palabra clave static
 
 const int g_y{ 1 }; // globales const tienen vinculación interna predeterminada
 constexpr int g_z{ 2 }; // globales constexpr tiene vinculación interna predeterminada
@@ -6,7 +26,7 @@ constexpr int g_z{ 2 }; // globales constexpr tiene vinculación interna predete
 int main()
 {
     return 0;
-}
+}*/
 
 
 
